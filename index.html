@@ -34,7 +34,7 @@
                                 class="fa fa-address-card fa-lg"></span>Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="loginButton">
                         <span class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>
@@ -146,7 +146,7 @@
                                             </div>
                                         </dd>
                                         <div class="offset-md-3 col-md-10">
-                                            <button type="button" data-dismiss="modal" class="btn btn-secondary">
+                                            <button type="button" data-dismiss="modal" class="btn btn-secondary" id="cancelButton">
                                                 Cancel
                                             </button>
                                             <button class="btn btn-primary">
@@ -174,9 +174,8 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal"
-                        data-target="#reserveModal" data-html="true"
-                        title="Or Call us at  <br><strong>+852 12345678</strong>" data-placement="bottom"
+                    <a role="button" class="btn btn-block nav-link btn-warning" id="reserveButton"    
+                        title="Or Call us at +852 12345678"
                         href="#reserve">Reserve Table</a>
                 </div>
             </div>
@@ -351,6 +350,13 @@
                     $('#carouselButton').children('span').removeClass('fa-play');
                     $('#carouselButton').children('span').addClass('fa-pause');
                 }
+            });
+            $("#reserveButton").click(function () {
+                $("#reserveModal").modal("show");
+            });
+
+            $("#loginButton").click(function () {
+                $("#loginModal").modal("show");
             });
         });
     </script>
