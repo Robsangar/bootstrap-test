@@ -88,3 +88,8 @@ body{
         color: floralwhite;
     }
 }
+
+.list-group {
+    max-height: 490px;
+    overflow-block: scroll;
+}

@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Ristorante Con Fusion: About Us</title>
+    <title>Ristorante Con Fusion: Review Us</title>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,9 +33,9 @@
                                 class="fa fa-info fa-lg"></span> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
                     </li>
-                    <li class="nav-item active"><a class="nav-link" href="#"><span
-                                class="fa fa-address-card fa-lg"></span> Contact</a></li>
-                    <li class="nav-item "><a class="nav-link" href="review.html"><span class="fa fa-star fa-lg"></span>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span>
+                            Contact</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-star fa-lg"></span>
                             Review us</a></li>
                 </ul>
             </div>
@@ -61,113 +61,66 @@
         <div class="row">
             <ol class="col-12 breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active">Contact Us</li>
+                <li class="breadcrumb-item active">Review Us</li>
             </ol>
             <div class="col-12">
-                <h3>Contact Us</h3>
+                <h3>Review Us</h3>
                 <hr>
             </div>
         </div>
 
         <div class="row row-content">
             <div class="col-12">
-                <h3>Location Information</h3>
+                <h3>Post your Review</h3>
             </div>
-            <div class="col-12 col-sm-4 offset-sm-1">
-                <h5>Our Address</h5>
-                <address style="font-size: 100%">
-                    121, Clear Water Bay Road<br>
-                    Clear Water Bay, Kowloon<br>
-                    HONG KONG<br>
-                    <i class="fa fa-phone"></i>: +852 1234 5678<br>
-                    <i class="fa fa-fax"></i>: +852 8765 4321<br>
-                    <i class="fa fa-envelope"></i>:
-                    <a href="mailto:confusion@food.net">confusion@food.net</a>
-                </address>
-            </div>
-            <div class="col-12 col-sm-6 offset-sm-1">
-                <h5>Map of our Location</h5>
-            </div>
-            <div class="col-12 col-sm-11 offset-sm-1">
-                <div class="btn-group" role="group">
-                    <a role="button" class="btn btn-primary" href="tel:+852 1234 5678"><i class="fa fa-phone"></i>
-                        Call</a>
-                    <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
-                    <a role="button" class="btn btn-success" href="mailto:confusion@food.net"><i
-                            class="fa fa-envelope-o"></i> Email</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row row-content">
-            <div class="col-12">
-                <h3>Send us your Feedback</h3>
-            </div>
-            <div class="col-12 col-md-9">
+            <div class="col-md-8">
                 <form>
                     <div class="form-group row">
                         <label for="firstname" class="col-md-2 col-form-label">First Name</label>
-                        <div class="col-md-10">
+                        <div class="col-md-8">
                             <input type="text" class="form-control" id="firstname" name="firstname"
                                 placeholder="First Name">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
-                        <div class="col-md-10">
+                        <div class="col-md-8">
                             <input type="text" class="form-control" id="lastname" name="lastname"
                                 placeholder="Last Name">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
-                        <div class="col-5 col-md-3">
-                            <input type="tel" class="form-control" id="areacode" name="areacode"
-                                placeholder="Area code">
-
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
+                        <label for="review" class="col-md-2 col-form-label">Your Review</label>
+                        <div class="col-md-8">
+                            <textarea class="form-control" id="review" name="review" rows="8"></textarea>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label for="emailid" class="col-md-2 col-form-label">Email</label>
-                        <div class="col-md-10">
-                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-primary" id="rate1">1</button>
+                            <button type="button" class="btn btn-primary" id="rate2">2</button>
+                            <button type="button" class="btn btn-primary" id="rate3">3</button>
+                            <button type="button" class="btn btn-primary" id="rate4">4</button>
+                            <button type="button" class="btn btn-primary" id="rate5">5</button>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-md-6 offset-md-2">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
-                                <label class="form-check-label" for="approve">
-                                    <strong>May we contact you?</strong>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-md-3 offset-md-1">
-                            <select class="form-control">
-                                <option>Tel.</option>
-                                <option>Email</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
-                        <div class="col-md-10">
-                            <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="offset-md-2 col-md-10">
-                            <button type="submit" class="btn btn-primary">
-                                Send Feedback
-                            </button>
-                        </div>
+                        <button type="button" class="btn btn-primary" style="margin-left: 43%;" id="sendReview">
+                            Post Review
+                        </button>
+                        <span id="ratingValue" display="none"></span>
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-md">
+            <div class="col-md">
+                <div class="list-group" id="reviewList">
+                    <li
+                        class="list-group-item list-group-item-action flex-column align-items-start list-group-item-secondary">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">John D.</h5>
+                            <small>5/10/2021</small>
+                        </div>
+                        <p class="mb-1">Loovely service, going there again next week.</p>
+                    </li>
+                </div>
             </div>
         </div>
 
@@ -225,6 +178,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/addons/rating.js"></script>
     <script src="js/scripts.js"></script>
     <!-- endbuild-->
 </body>
