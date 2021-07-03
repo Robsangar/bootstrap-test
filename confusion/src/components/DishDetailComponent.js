@@ -34,7 +34,7 @@ function RenderComments({ comments, addComment, dishId }) {
         return (
             <div>
                 <h4>Comments</h4>
-                <ul class="list-unstyled">
+                <ul className="list-unstyled">
                     {list}
                 </ul>
                 <CommentForm dishId={dishId} addComment={addComment} />
@@ -60,7 +60,7 @@ const DishDetail = (props) => {
                     <h4>{props.errMess}</h4>
                 </div>
             </div>
-        )
+        );
     } else if (props.dish) {
         return (
             <div className="container">
